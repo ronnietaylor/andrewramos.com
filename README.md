@@ -1,4 +1,4 @@
-sinatra-backbone
+andrewramos.com
 ===================
 
-A quick Sinatra-based app with a little backbone.
+A simple Ruby/Sinatra based website for my buddy.
