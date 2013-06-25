@@ -7,7 +7,7 @@ require 'sass'
 require 'compass'
 require 'zurb-foundation'
 
-class Backbone < Sinatra::Base
+class Ramos < Sinatra::Base
   register Sinatra::AssetPack
   register Sinatra::Partial
   use Rack::Deflater

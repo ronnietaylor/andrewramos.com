@@ -1,3 +1,3 @@
-require './backbone'
+require './ramos'
 
-run Backbone.new
+run Ramos.new
