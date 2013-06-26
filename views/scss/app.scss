@@ -51,7 +51,6 @@
 // All Custom css and overrides below here.
 
 body{
-	background: url(/images/subtle_freckles.png) repeat;
 	h1, h2, h3, h4, h5, h6 {
 		font-weight: normal;
 	}
@@ -64,11 +63,16 @@ body{
 				font-weight: normal;
 			}
 		}
+    h1#site-name {
+      font-family: "ff-dagny-web-pro",sans-serif;
+    }
 		.tagline {
-			h1 {
-				font-family: 'GibsonLightItalic', Helvetica, Arial, sans-serif;
-				color: #603429;
-				font-size: 4.5em;
+			h2 {
+				font-family: "ff-meta-serif-web-pro",serif;
+        font-style: italic;
+        font-weight: 500;
+				color: #a0b6b6;
+				font-size: 20px;
 				text-align: center;
 			}
 		}
