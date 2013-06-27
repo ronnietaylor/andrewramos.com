@@ -71,13 +71,6 @@ body{
 
 			nav.top-bar {
 				margin-bottom: 0;
-				.toggle-topbar.menu-icon {
-					a {
-						span {
-							/* empty */
-						}
-					}
-				}
 				.top-bar-section {
 					ul {
 						background: #ebf6ed;
@@ -86,10 +79,7 @@ body{
 								color: $light-green;
 							}
 							a:hover {
-								background: url('/images/nav-arrow.png') top center;
-							}
-							a:not(.button) {
-								background: #ebf6ed;
+								background: url('/images/nav-arrow.png') top center no-repeat;
 							}
 						}
 						.divider {
