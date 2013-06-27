@@ -52,6 +52,7 @@
 $blue: #486968;
 $font-green: #6f9184;
 $light-green: #a4c1b6;
+$dark-green: #2c5a5c;
 $footer-green: #a0b6b6;
 
 body{
@@ -83,6 +84,8 @@ body{
 							}
 						}
 						.divider {
+							border-right: 3px solid #e4f0e6;
+							border-left: 3px solid #e4f0e6;
 
 						}
 					}
@@ -107,7 +110,7 @@ body{
     h1#site-name {
       text-align: center;
       color: $blue;
-      font-size: 2em;
+      font-size: emCalc(34px);
       font-weight: normal;
       margin-bottom: 0;
       height: 1.1em;
@@ -118,21 +121,35 @@ body{
         font-style: italic;
         font-weight: 500;
 				color: #a0b6b6;
-				font-size: 20px;
+				font-size: emCalc(20px);
 				text-align: center;
 				margin-bottom: 50px;
 			}
 		}
 		.portfolio-items {
-			margin-bottom: 20px;
+			margin-bottom: emCalc(20px);
 			.panel {
-				@include radius($global-radius);
 				text-align: center;
 				border: none;
 				background-color: #fff;
 				padding: 0;
 				i {
 					font-size: 6em;
+				}
+			}
+			.portfolio-item {
+				.portfolio-deets {
+					background-color: #fb6c40;
+					display: none;
+					text-decoration: none;
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 100%;
+					margin: 0;
+					padding: 0;
+					opacity: .95;
+					list-style: none;
 				}
 			}
 		}
@@ -149,9 +166,10 @@ body{
 				}
 				.client-quote {
 					font-family: "DroidSerif-Italic",serif;
-					color: $footer-green;
+					color: $dark-green;
 					text-align: center;
-					font-size: 30px;
+					font-size: emCalc(30px);
+					line-height: 1.3em;
 					margin-top: 50px;
 					margin-bottom: 50px;
 				}
@@ -163,7 +181,7 @@ body{
 					color: #88ac9e;
 					letter-spacing: .09em;
 					.client-title {
-						font-size: 16px;
+						font-size: emCalc(16px);
 						font-family: 'Droid Serif', serif;
 						font-style: italic;
 						font-weight: 400;
@@ -187,7 +205,7 @@ body{
 					display: block;
 					background-color: #fb6c40;
 					width: 144px;
-					height: 24px;
+					height: 50px;
 					margin: 0 auto 0 auto;
 					border-bottom: 24px solid #f2663c;
 					font-size: 20px;
@@ -198,10 +216,7 @@ body{
 					text-align: center;
 					text-decoration: none;
 					line-height: 48px;
-					-moz-border-radius: 24px;
-					-webkit-border-radius: 24px;
-					border-radius: 24px;
-					-khtml-border-radius: 24px;
+					@include radius(24px);
 				}
 			}
 		}
@@ -216,10 +231,13 @@ body{
 				font-family: "ff-dagny-web-pro",sans-serif;
 				font-style: italic;
 				font-weight: 400;
-				font-size: 14px;
+				font-size: emCalc(14px);
 				span {
 					color: #2c5a5c;
 				}
+			}
+			.social-icons {
+				font-size: emCalc(30px);
 			}
 		}
 	}
