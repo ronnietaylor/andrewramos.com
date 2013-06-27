@@ -153,33 +153,71 @@ body{
 			}
 		}
 		.row#quote-box {
-			border-top: solid #fb6c40 5px;
-			.circle-quote {
-				display: block;
-				width: 39px;
-				margin: -21px auto 0 auto;
+			margin-bottom: 50px;
+			.large-12.columns {
+				.quote-box-top {
+					border-top: solid #fb6c40 5px;
+				}
+				.circle-quote {
+					display: block;
+					width: 39px;
+					margin: -21px auto 0 auto;
+				}
+				.client-quote {
+					font-family: "DroidSerif-Italic",serif;
+					color: $footer-green;
+					text-align: center;
+					font-size: 30px;
+					margin-top: 50px;
+					margin-bottom: 50px;
+				}
+				.client-name {
+					font-family: "brandon-grotesque",sans-serif;
+					font-weight: 500;
+					font-style: normal;
+					text-align: center;
+					color: #88ac9e;
+					letter-spacing: .09em;
+					.client-title {
+						font-size: 16px;
+						font-family: 'Droid Serif', serif;
+						font-style: italic;
+						font-weight: 400;
+						color: #a4c1b6;
+					}
+				}
 			}
-			.client-quote {
-				font-family: "DroidSerif-Italic",serif;
-				color: $footer-green;
+		}
+		#talk-wrapper {
+			background: #ebf6ed;
+			text-align: center;
+			.row#lets-talk {
+				font-family: 'Droid Serif', serif;
+				font-style: italic;
+				font-size: 20px;
+				color: #a4c1b6;
 				text-align: center;
-				font-size: 30px;
-				margin-top: 50px;
-				margin-bottom: 50px;
-			}
-			.client-name {
-				font-family: "brandon-grotesque",sans-serif;
-				font-weight: 500;
-				font-style: normal;
-				text-align: center;
-				color: #88ac9e;
-				letter-spacing: .09em;
-				.client-title {
-					font-size: 16px;
-					font-family: 'Droid Serif', serif;
-					font-style: italic;
-					font-weight: 400;
-					color: #a4c1b6;
+				padding-top: 108px;
+				padding-bottom: 100px;
+				.talk-btn {
+					display: block;
+					background-color: #fb6c40;
+					width: 144px;
+					height: 24px;
+					margin: 0 auto 0 auto;
+					border-bottom: 24px solid #f2663c;
+					font-size: 20px;
+					font-family: "futura-pt",sans-serif;
+					font-style: normal;
+					font-weight: 700;
+					color: #fff;
+					text-align: center;
+					text-decoration: none;
+					line-height: 48px;
+					-moz-border-radius: 24px;
+					-webkit-border-radius: 24px;
+					border-radius: 24px;
+					-khtml-border-radius: 24px;
 				}
 			}
 		}
@@ -187,6 +225,17 @@ body{
 			color: $footer-green;
 			a {
 				color: $footer-green;
+			}
+			p#copyright {
+				float: left;
+				color: #a4c1b6;
+				font-family: "ff-dagny-web-pro",sans-serif;
+				font-style: italic;
+				font-weight: 400;
+				font-size: 14px;
+				span {
+					color: #2c5a5c;
+				}
 			}
 		}
 	}
