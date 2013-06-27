@@ -54,6 +54,7 @@
 $blue: #486968;
 $font-green: #6f9184;
 $light-green: #a4c1b6;
+$footer-green: #a0b6b6;
 
 body{
 	h1, h2, h3, h4, h5, h6 {
@@ -149,6 +150,43 @@ body{
 				i {
 					font-size: 6em;
 				}
+			}
+		}
+		.row#quote-box {
+			border-top: solid #fb6c40 5px;
+			.circle-quote {
+				display: block;
+				width: 39px;
+				margin: -21px auto 0 auto;
+			}
+			.client-quote {
+				font-family: "DroidSerif-Italic",serif;
+				color: $footer-green;
+				text-align: center;
+				font-size: 30px;
+				margin-top: 50px;
+				margin-bottom: 50px;
+			}
+			.client-name {
+				font-family: "brandon-grotesque",sans-serif;
+				font-weight: 500;
+				font-style: normal;
+				text-align: center;
+				color: #88ac9e;
+				letter-spacing: .09em;
+				.client-title {
+					font-size: 16px;
+					font-family: 'Droid Serif', serif;
+					font-style: italic;
+					font-weight: 400;
+					color: #a4c1b6;
+				}
+			}
+		}
+		footer.row {
+			color: $footer-green;
+			a {
+				color: $footer-green;
 			}
 		}
 	}
