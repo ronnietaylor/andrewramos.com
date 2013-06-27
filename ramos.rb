@@ -38,7 +38,6 @@ class Ramos < Sinatra::Base
       '/js/underscore.js',
       '/js/backbone.js',
       '/js/custom.modernizr.js',
-      '/js/zepto.js',
       '/js/foundation/foundation.js',
       '/js/foundation/foundation.topbar.js',
       '/js/thisapp.js',
