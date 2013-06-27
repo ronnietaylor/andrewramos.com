@@ -50,11 +50,59 @@
 
 // All Custom css and overrides below here.
 
+// Some global vars
+$blue: #486968;
+$font-green: #6f9184;
+$light-green: #a4c1b6;
+
 body{
 	h1, h2, h3, h4, h5, h6 {
 		font-weight: normal;
 	}
 	#inner-wrapper {
+		#nav-wrapper {
+			background: #ebf6ed;
+			height: 60px;
+		}
+		#logo {
+			text-align: center;
+			margin-top: -29px;
+			margin-bottom: 25px;
+		}
+		#site-nav {
+
+			nav.top-bar {
+				background: #ebf6ed;
+				margin-top: 7px;
+				margin-bottom: 0;
+				.top-bar-section {
+					ul {
+						background: #ebf6ed;
+						li {
+							a {
+								color: $light-green;
+							}
+							a:not(.button) {
+								background: #ebf6ed;
+							}
+						}
+						.divider {
+							border-right: 3px solid #e4f0e6;
+							border-left: 3px solid #e4f0e6;
+							height: 30px;
+							margin-top: 8px;
+						}
+					}
+				}
+			}
+			.name {
+				h1 {
+					a {
+						color: $font-green;
+					}
+				}
+			}
+		}
 		.nav-bar {
 			position: relative;
 			top: 1.4em;
@@ -64,29 +112,34 @@ body{
 			}
 		}
     h1#site-name {
-      font-family: "ff-dagny-web-pro",sans-serif;
+      text-align: center;
+      color: $blue;
+      font-size: 2em;
+      font-weight: normal;
+      margin-bottom: 0;
+      height: 1.1em;
     }
 		.tagline {
 			h2 {
-				font-family: "ff-meta-serif-web-pro",serif;
+				font-family: "DroidSerif-Italic",serif;
         font-style: italic;
         font-weight: 500;
 				color: #a0b6b6;
 				font-size: 20px;
 				text-align: center;
+				margin-bottom: 50px;
 			}
 		}
 		.portfolio-items {
 			margin-bottom: 20px;
-			.p-item {
-				.panel {
-					@include radius($global-radius);
-					text-align: center;
-					border: 1px solid #d7ccc9;
-					background-color: #e7e1df;
-					i {
-						font-size: 6em;
-					}
+			.panel {
+				@include radius($global-radius);
+				text-align: center;
+				border: none;
+				background-color: #fff;
+				padding: 0;
+				i {
+					font-size: 6em;
 				}
 			}
 		}
