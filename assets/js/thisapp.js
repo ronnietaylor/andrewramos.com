@@ -1,2 +1,3 @@
 myApp = {};
 
+$(document).foundation();

@@ -1202,11 +1202,11 @@ $panel-bg: darken(#fff, 5%);
 
 // Background color for the top bar
 
-// $topbar-bg:                            #111 !default;
+$topbar-bg:                            #ebf6ed !default;
 
 // Height and margin
 
-// $topbar-height:                        45px;
+$topbar-height:                        54px;
 // $topbar-margin-bottom:                 emCalc(30px);
 
 // Control Input height for top bar
@@ -1229,14 +1229,14 @@ $panel-bg: darken(#fff, 5%);
 
 // Set the link colors and styles for top-level nav
 
-// $topbar-link-color:                    #fff;
+$topbar-link-color:                    #a4c1b6;
 // $topbar-link-color-hover:              #fff;
 // $topbar-link-color-active:             #fff;
 // $topbar-link-weight:                   bold;
 // $topbar-link-font-size:                emCalc(13px);
 // $topbar-link-hover-lightness:          -30%; // Darken by 30%
-// $topbar-link-bg-hover:                 darken($topbar-bg, 3%);
-// $topbar-link-bg-active:                darken($topbar-bg, 3%);
+$topbar-link-bg-hover:                 darken($topbar-bg, 3%);
+$topbar-link-bg-active:                darken($topbar-bg, 3%);
 
 // $topbar-dropdown-label-color:          #555;
 // $topbar-dropdown-label-text-transform: uppercase;
@@ -1248,8 +1248,8 @@ $panel-bg: darken(#fff, 5%);
 // $topbar-menu-link-transform:           uppercase;
 // $topbar-menu-link-font-size:           emCalc(13px);
 // $topbar-menu-link-weight:              bold;
-// $topbar-menu-link-color:               #fff;
-// $topbar-menu-icon-color:               #fff;
+$topbar-menu-link-color:               #a4c1b6;
+$topbar-menu-icon-color:               #a4c1b6;
 // $topbar-menu-link-color-toggled:       #888;
 // $topbar-menu-icon-color-toggled:       #888;
 

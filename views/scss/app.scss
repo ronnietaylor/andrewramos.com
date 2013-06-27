@@ -7,8 +7,6 @@
 // Comment out this import if you are customizing you imports below
 @import "foundation";
 
-
-
 // Import specific parts of Foundation by commenting the import "foundation"
 // and uncommenting what you want below. You must uncomment the following if customizing
 
@@ -63,7 +61,6 @@ body{
 	#inner-wrapper {
 		#nav-wrapper {
 			background: #ebf6ed;
-			height: 60px;
 		}
 		#logo {
 			text-align: center;
@@ -73,14 +70,11 @@ body{
 		#site-nav {
 
 			nav.top-bar {
-				background: #ebf6ed;
-				margin-top: 7px;
 				margin-bottom: 0;
 				.toggle-topbar.menu-icon {
 					a {
-						color: $light-green;
 						span {
-							box-shadow: 0 10px 0 1px $light-green, 0 16px 0 1px $light-green, 0 22px 0 1px $light-green;
+							/* empty */
 						}
 					}
 				}
@@ -91,6 +85,9 @@ body{
 							a {
 								color: $light-green;
 							}
+							a:hover {
+								background: url('/images/nav-arrow.png') top center;
+							}
 							a:not(.button) {
 								background: #ebf6ed;
 							}
@@ -98,8 +95,7 @@ body{
 						.divider {
 							border-right: 3px solid #e4f0e6;
 							border-left: 3px solid #e4f0e6;
-							height: 30px;
-							margin-top: 8px;
+
 						}
 					}
 				}
