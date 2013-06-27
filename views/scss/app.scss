@@ -75,6 +75,14 @@ body{
 				background: #ebf6ed;
 				margin-top: 7px;
 				margin-bottom: 0;
+				.toggle-topbar.menu-icon {
+					a {
+						color: $light-green;
+						span {
+							box-shadow: 0 10px 0 1px $light-green, 0 16px 0 1px $light-green, 0 22px 0 1px $light-green;
+						}
+					}
+				}
 				.top-bar-section {
 					ul {
 						background: #ebf6ed;
