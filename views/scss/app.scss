@@ -288,6 +288,12 @@ body{
 									background-image: none;
 								}
 							}
+							li.divider {
+								border-right: none;
+								border-left: none;
+								border-top: 1px solid #e4f0e6;
+								border-bottom: none;
+							}
 						}
 					}
 				}
