@@ -89,9 +89,10 @@ $global-radius: 3px;
 
 // Media Queries
 
-// $small-screen: 768px;
+$small-screen: 768px;
 // $medium-screen: 1280px;
 // $large-screen: 1440px;
+$menu-icon-screen: 939px;
 
 // $screen: "only screen";
 // $small: "only screen and (min-width: #{$small-screen})";
@@ -99,6 +100,7 @@ $global-radius: 3px;
 // $large: "only screen and (min-width: #{$large-screen})";
 // $landscape: "only screen and (orientation: landscape)";
 // $portrait: "only screen and (orientation: portrait)";
+$small-max: "only screen and (max-width: #{$menu-icon-screen})";
 
 //// Cursors
 

@@ -72,10 +72,14 @@ body{
 
 			nav.top-bar {
 				margin-bottom: 0;
+				.toggle-topbar.menu-icon {
+					left: -39px;
+				}
 				.top-bar-section {
 					ul {
 						background: #ebf6ed;
 						li {
+							text-align: center;
 							a {
 								color: $light-green;
 							}
@@ -244,3 +248,54 @@ body{
 		}
 	}
 }
+
+/* We use this media query to add styles to any device that supports media queries */
+@media #{$screen} { }
+
+/* Used to alter styles for screens at least 768px wide. This is where the grid changes. */
+@media #{$small} { }
+
+/* Used to alter styles for screens at least 1280px wide. */
+@media #{$medium} { }
+
+/* Used to alter styles for screens at least 1440px wide. */
+@media #{$large} { }
+
+/* Apply styles to screens in landscape orientation */
+@media #{$landscape} { }
+
+/* Apply styles to screens in portrait orientation */
+@media #{$portrait} { }
+
+/* Apply styles to screens smaller than 768 wide. This is where the grid changes. */
+@media #{$small-max} { 
+	body {
+		#inner-wrapper {
+			#logo {
+				margin-top: 40px;
+				margin-bottom: 0;
+			}
+			#site-nav {
+				nav.top-bar {
+					.top-bar-section {
+						ul {
+							li {
+								a {
+									position: relative;
+									left: -8px;
+								}
+								a:hover {
+									background-image: none;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+/* We also use Modernizr to add a .touch class to the body when applicable */
+/* You can prepend this class to anything and it will style only for touch devices */
+.touch .your-element {}
