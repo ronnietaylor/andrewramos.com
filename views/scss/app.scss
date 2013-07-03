@@ -261,12 +261,6 @@ body{
 /* Used to alter styles for screens at least 1440px wide. */
 @media #{$large} { }
 
-/* Apply styles to screens in landscape orientation */
-@media #{$landscape} { }
-
-/* Apply styles to screens in portrait orientation */
-@media #{$portrait} { }
-
 /* Apply styles to screens smaller than 768 wide. This is where the grid changes. */
 @media #{$small-max} { 
 	body {
@@ -298,9 +292,31 @@ body{
 					}
 				}
 			}
+			footer.row {
+				p#copyright {
+					float: none;
+					text-align: center;
+					.curious {
+						display: block;
+					}
+				}
+				.right.social-icons {
+					margin-right: emCalc(50px);
+				}
+			}
 		}
 	}
 }
+
+/* Apply styles to screens in landscape orientation */
+@media #{$landscape} { 
+	body {
+
+	}
+}
+
+/* Apply styles to screens in portrait orientation */
+@media #{$portrait} { }
 
 /* We also use Modernizr to add a .touch class to the body when applicable */
 /* You can prepend this class to anything and it will style only for touch devices */
