@@ -56,11 +56,22 @@ class Ramos < Sinatra::Base
   }
 
   get '/' do
-   slim :index
+    @bodyclass = "home"
+    slim :index
   end
 
-  get '/blog' do
-   slim :blog
+  get '/about' do
+    @bodyclass = "about"
+    slim :about
+  end
+
+  get '/work' do
+    slim :index
+  end
+
+  get '/work/client1' do
+    @bodyclass = "work-details"
+    slim :client1
   end
 
   get '/css/:name.css' do
