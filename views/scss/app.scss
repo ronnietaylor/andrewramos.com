@@ -76,6 +76,16 @@ $footer-green: #a0b6b6;
 }
 
 
+#top-arrw {
+	width: 50px;
+	height: 50px;
+	background-color: #fe6860;
+	@include radius(3px);
+	position: fixed;
+	right: 20px;
+	top: 500px;
+}
+
 body{
 	h1, h2, h3, h4, h5, h6 {
 		font-weight: normal;
@@ -291,10 +301,13 @@ body.work-details {
 	.row.crumbs {
 		margin-top: emCalc(30px);
 		margin-bottom: emCalc(50px);
+		.button {
+			background-color: #fb6c40;
+		}
 	}
 	.client-details {
 		h1 {
-			font-size: (40px);
+			font-size: emCalc(43px);
 		}
 		.hline {
 			border-top: 3px solid #dfe9e9;
@@ -328,6 +341,57 @@ body.about {
     margin-top: emCalc(20px);
     margin-bottom: emCalc(30px);
     height: 1.1em;
+  }
+  .about-summary {
+  	.question {
+  		text-align: center;
+  		margin-top: emCalc(18px);
+  		margin-bottom: emCalc(18px);
+  		.yeah {
+  			@include droid-serif-italic;
+  			color: #91adac;
+  			font-size: emCalc(14px);
+  			margin-bottom: emCalc(10px);
+  		}
+  		.what-do {
+  			@include gibson-light-bold;
+  			color: #91adac;
+  			font-size: emCalc(20px);
+  			text-transform: uppercase;
+  		}
+  	}
+  	.skilz {
+  		padding-top: emCalc(20px);
+  		padding-bottom: emCalc(20px);
+  		background-color: #edf0ed;
+  		background-image: url('/images/skilz-arrw.png');
+  		background-position: center top;
+  		background-repeat: no-repeat;
+  		color: #92a1a1;
+  		ul {
+  			list-style: none;
+  			margin: 0;
+  			padding: 0;
+  			li {
+  				margin: 0;
+  				padding: 0;
+  				list-style: none;
+  				text-align: center;
+  				text-transform: uppercase;
+  				@include gibson-light-bold;
+  				font-size: emCalc(18px);
+  				.skill-desc {
+  					display: block;
+  					@include droid-serif-italic;
+  					font-size: emCalc(11px);
+  					color: #a1adad;
+  				}
+  				.need-somethin {
+  					padding: emCalc(10px) emCalc(20px);
+  				}
+  			}
+  		}
+  	}
   }
   .about-details {
   	padding: emCalc(20px);

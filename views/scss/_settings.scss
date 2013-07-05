@@ -335,7 +335,7 @@ $header-font-color: #a0b6b6;
 // Button text styles.
 
 // $button-font-family: inherit;
-// $button-font-color: #fff;
+$button-font-color: #9e3414;
 // $button-font-color-alt: #333;
 // $button-font-med: emCalc(16px);
 // $button-font-tny: emCalc(11px);
@@ -350,8 +350,8 @@ $header-font-color: #a0b6b6;
 
 // Button border styles.
 
-// $button-border-width: 1px;
-// $button-border-style: solid;
+$button-border-width: 0;
+$button-border-style: none;
 // $button-border-color: darken($primary-color, $button-function-factor);
 
 // Radius used throughout the core.
