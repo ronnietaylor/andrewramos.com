@@ -141,7 +141,7 @@ $column-gutter: emCalc(30px);
 $header-font-family: 'GibsonLightBold', Helvetica, Arial, sans-serif;
 $header-font-weight: normal;
 $header-font-style: normal;
-$header-font-color: #F05A24;
+$header-font-color: #a0b6b6;
 // $header-line-height: 1.4;
 // $header-top-margin: .2em;
 // $header-bottom-margin: .5em;
@@ -1233,7 +1233,7 @@ $topbar-dropdown-link-color:           #6f9184;
 
 $topbar-link-color:                    #a4c1b6;
 // $topbar-link-color-hover:              #fff;
-// $topbar-link-color-active:             #fff;
+$topbar-link-color-active:             #6f9184;
 // $topbar-link-weight:                   bold;
 // $topbar-link-font-size:                emCalc(13px);
 $topbar-link-hover-lightness:          -30%; // Darken by 30%

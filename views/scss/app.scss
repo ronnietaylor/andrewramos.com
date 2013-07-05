@@ -66,6 +66,15 @@ $footer-green: #a0b6b6;
 	font-family: 'GibsonLightBold', Helvetica, Arial, sans-serif;
 	font-weight: normal;
 }
+@mixin droid-serif {
+	font-family: 'DroidSerif',serif;
+	font-weight: 400;
+}
+@mixin droid-serif-italic {
+	font-family: 'DroidSerif-Italic',serif;
+	font-weight: 400;
+}
+
 
 body{
 	h1, h2, h3, h4, h5, h6 {
@@ -104,6 +113,9 @@ body{
 							border-left: 3px solid #e4f0e6;
 
 						}
+					}
+					.mobile-tagline {
+						display: none;
 					}
 				}
 			}
@@ -275,6 +287,64 @@ body{
 	}
 }
 
+body.work-details {
+	.row.crumbs {
+		margin-top: emCalc(30px);
+		margin-bottom: emCalc(50px);
+	}
+	.client-details {
+		h1 {
+			font-size: (40px);
+		}
+		.hline {
+			border-top: 3px solid #dfe9e9;
+			width: 20%;
+		}
+		h2 {
+			color: #c4d7d7;
+			font-size: (18px);
+			text-transform: uppercase;
+			margin-bottom: emCalc(40px);
+		}
+		p.details {
+			@include droid-serif-italic;
+			color: #6f8c8c;
+			font-size: emCalc(18px);
+		}
+	}
+	.client-images {
+		img {
+			margin-bottom: emCalc(20px);
+		}
+	}
+}
+
+body.about {
+  h1#about-header {
+    text-align: center;
+    color: $blue;
+    font-size: emCalc(34px);
+    font-weight: normal;
+    margin-top: emCalc(20px);
+    margin-bottom: emCalc(30px);
+    height: 1.1em;
+  }
+  .about-details {
+  	padding: emCalc(20px);
+  	background-color: #648c8b;
+  	p.first {
+  		@include droid-serif-italic;
+  		font-size: emCalc(24px);
+  		color: #fff;
+  	}
+  	p.second {
+  		@include droid-serif-italic;
+  		font-size: emCalc(16px);
+  		color: #b4d9d8;
+  	}
+  }
+}
+
 /* We use this media query to add styles to any device that supports media queries */
 @media #{$screen} { }
 
@@ -313,6 +383,29 @@ body{
 								border-left: none;
 								border-top: 1px solid #e4f0e6;
 								border-bottom: none;
+							}
+						}
+						.mobile-tagline {
+							display: block;
+							position: absolute;
+							top: -41px;
+							right: 0;
+							z-index: 5;
+							width: 360px;
+							color: #6f8c8c;
+							li {
+								display: inline;
+								text-align: right;
+							}
+							.mobile-name {
+								@include gibson-light-bold;
+								font-size: emCalc(16px);
+								padding-right: 4px;
+							}
+							.mobile-tag {
+								@include droid-serif-italic;
+								font-size: emCalc(12px);
+								color: #a0b6b6;
 							}
 						}
 					}
