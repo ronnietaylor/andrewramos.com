@@ -6,7 +6,7 @@
 .row
   .large-6.large-centered.columns.tagline(role="content")
     h1#about-header About the Designer
-.row
+.row.about-row
   .large-4.columns.about-summary
     .head-shot
       img(src="http://placehold.it/350x205&text=Headshot")
@@ -47,14 +47,18 @@
         | insatiable desire to understand how things work. Likes cold 
         | drinks, warm days, and writing in the third-person.
       p.follow
-        ul
+        ul.inline-list.follow-me
           li Follow me
-          li.tweeter Twitter
-          li.instagram Instagram
-          li.dribble Dribble
-          li.svpply Svpply
-          li.rdio Rdio
-.row
+          li.tweeter 
+            a(href="#")
+              i.social.foundicon-twitter
+          li.instagram 
+            a(href="#")
+              i.social.foundicon-instagram
+          li.dribble
+            a(href="#")
+              i.social.foundicon-dribbble
+.row.about-studio
   .large-4.columns
     h4 Studio Address
     p

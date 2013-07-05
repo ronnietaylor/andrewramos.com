@@ -292,6 +292,18 @@ body{
 			}
 			.social-icons {
 				font-size: emCalc(30px);
+				li {
+					height: 25px;
+				}
+				/* Facebarf styles */
+				.fb_iframe_widget iframe {
+					margin-top: -15px;
+				}
+				.pinteresting {
+					a {
+						top: -15px;
+					}
+				}
 			}
 		}
 	}
@@ -342,69 +354,122 @@ body.about {
     margin-bottom: emCalc(30px);
     height: 1.1em;
   }
-  .about-summary {
-  	.question {
-  		text-align: center;
-  		margin-top: emCalc(18px);
-  		margin-bottom: emCalc(18px);
-  		.yeah {
-  			@include droid-serif-italic;
-  			color: #91adac;
-  			font-size: emCalc(14px);
-  			margin-bottom: emCalc(10px);
-  		}
-  		.what-do {
+  .about-row{
+  	margin-bottom: emCalc(66px);
+	  .about-summary {
+	  	.question {
+	  		text-align: center;
+	  		margin-top: emCalc(18px);
+	  		margin-bottom: emCalc(18px);
+	  		.yeah {
+	  			@include droid-serif-italic;
+	  			color: #91adac;
+	  			font-size: emCalc(14px);
+	  			margin-bottom: emCalc(10px);
+	  		}
+	  		.what-do {
+	  			@include gibson-light-bold;
+	  			color: #91adac;
+	  			font-size: emCalc(20px);
+	  			text-transform: uppercase;
+	  		}
+	  	}
+	  	.skilz {
+	  		padding-top: emCalc(20px);
+	  		padding-bottom: emCalc(20px);
+	  		background-color: #edf0ed;
+	  		background-image: url('/images/skilz-arrw.png');
+	  		background-position: center top;
+	  		background-repeat: no-repeat;
+	  		color: #92a1a1;
+	  		ul {
+	  			list-style: none;
+	  			margin: 0;
+	  			padding: 0;
+	  			li {
+	  				margin: 0;
+	  				padding: 0;
+	  				list-style: none;
+	  				text-align: center;
+	  				text-transform: uppercase;
+	  				@include gibson-light-bold;
+	  				font-size: emCalc(18px);
+	  				.skill-desc {
+	  					display: block;
+	  					@include droid-serif-italic;
+	  					font-size: emCalc(11px);
+	  					color: #a1adad;
+	  				}
+	  			}
+	  		}
+				.need-somethin {
+					padding-top: emCalc(20px);
+					padding-bottom: emCalc(20px);
+					margin-left: emCalc(25px);
+					margin-right: emCalc(25px);
+					margin-top: emCalc(20px);
+					font-size: emCalc(14px);
+					text-align: center;
+					@include droid-serif-italic;
+					border-top: 5px solid #fff;
+					line-height: emCalc(23px);
+				}
+	  	}
+	  }
+	  .about-details {
+	  	padding-left: emCalc(20px);
+	  	padding-right: emCalc(50px);
+	  	padding-top: emCalc(20px);
+	  	padding-bottom: emCalc(20px);
+	  	background-color: #648c8b;
+	  	min-height: 585px;
+	  	position: relative;
+	  	p.first {
+	  		@include droid-serif-italic;
+	  		font-size: emCalc(24px);
+	  		color: #fff;
+	  	}
+	  	p.second {
+	  		@include droid-serif-italic;
+	  		font-size: emCalc(16px);
+	  		color: #b4d9d8;
+	  	}
+	  	.follow-me {
+	  		position: absolute;
+	  		left: 37px;
+	  		bottom: 0;
+	  		width: 80%;
+	  		border-top: 5px solid #4d7170;
+	  		margin-left: 0;
+	  		padding-top: emCalc(31px);
+	  		text-transform: uppercase;
+	  		@include gibson-light-bold;
+	  		color: #4d7170;
+	  		li {
+	  			line-height: emCalc(59px);
+	  		}
+	  		a {
+	  			color: #4d7170;
+	  		}
+	  		a:hover {
+	  			color: #fff;
+	  		}
+	  		i {
+	  			font-size: emCalc(40px);
+	  		}
+	  	}
+	  }
+  }
+  .about-studio {
+  	.columns {
+  		h4 {
+  			border-top: 5px solid #eaf4ec;
+  			padding-top: emCalc(10px);
   			@include gibson-light-bold;
-  			color: #91adac;
-  			font-size: emCalc(20px);
+  			font-size: emCalc(16px);
+  			color: #4e4b50;
   			text-transform: uppercase;
   		}
-  	}
-  	.skilz {
-  		padding-top: emCalc(20px);
-  		padding-bottom: emCalc(20px);
-  		background-color: #edf0ed;
-  		background-image: url('/images/skilz-arrw.png');
-  		background-position: center top;
-  		background-repeat: no-repeat;
-  		color: #92a1a1;
-  		ul {
-  			list-style: none;
-  			margin: 0;
-  			padding: 0;
-  			li {
-  				margin: 0;
-  				padding: 0;
-  				list-style: none;
-  				text-align: center;
-  				text-transform: uppercase;
-  				@include gibson-light-bold;
-  				font-size: emCalc(18px);
-  				.skill-desc {
-  					display: block;
-  					@include droid-serif-italic;
-  					font-size: emCalc(11px);
-  					color: #a1adad;
-  				}
-  				.need-somethin {
-  					padding: emCalc(10px) emCalc(20px);
-  				}
-  			}
-  		}
-  	}
-  }
-  .about-details {
-  	padding: emCalc(20px);
-  	background-color: #648c8b;
-  	p.first {
-  		@include droid-serif-italic;
-  		font-size: emCalc(24px);
-  		color: #fff;
-  	}
-  	p.second {
-  		@include droid-serif-italic;
-  		font-size: emCalc(16px);
-  		color: #b4d9d8;
   	}
   }
 }

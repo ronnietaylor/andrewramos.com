@@ -18,6 +18,15 @@ html
     /[if lt IE 9]
       script(src="http://html5shim.googlecode.com/svn/trunk/html5.js")
   body class="#{@bodyclass}"
+    #fb-root
+    javascript:
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
     #inner-wrapper
       == partial :"partials/header"
       == yield
@@ -25,11 +34,14 @@ html
     
     script(type="text/javascript" src="/js/zepto.js")
     == js :app
-    / script(type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js")
-    / script(type="text/javascript" src="/js/jquery.fittext.js")
-    / script(type="text/javascript" src="/js/underscore.js")
-    / script(type="text/javascript" src="/js/backbone.js")
-    / script(type="text/javascript" src="/js/vendor/custom.modernizr.js")
-    / script(type="text/javascript" src="/js/foundation/foundation.js")
-    / script(type="text/javascript" src="/js/app.js")
-
+    javascript:
+      !function(d,s,id){
+        var js,fjs=d.getElementsByTagName(s)[0];
+        if(!d.getElementById(id)){
+          js=d.createElement(s);
+          js.id=id;
+          js.src="//platform.twitter.com/widgets.js";
+          fjs.parentNode.insertBefore(js,fjs);
+        }
+      }(document,"script","twitter-wjs");
+    script(type="text/javascript" src="//assets.pinterest.com/js/pinit.js")
