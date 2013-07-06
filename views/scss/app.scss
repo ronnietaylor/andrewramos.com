@@ -52,6 +52,7 @@
 $blue: #486968;
 $font-green: #6f9184;
 $light-green: #a4c1b6;
+$light-green-bg: #ebf6ed;
 $dark-green: #2c5a5c;
 $footer-green: #a0b6b6;
 @mixin gibson-light {
@@ -275,6 +276,7 @@ body{
 			}
 		}
 		footer.row {
+			margin-top: emCalc(20px);
 			color: $footer-green;
 			a {
 				color: $footer-green;
@@ -375,7 +377,7 @@ body.about {
 	  		}
 	  	}
 	  	.skilz {
-	  		padding-top: emCalc(20px);
+	  		padding-top: emCalc(40px);
 	  		padding-bottom: emCalc(20px);
 	  		background-color: #edf0ed;
 	  		background-image: url('/images/skilz-arrw.png');
@@ -384,30 +386,34 @@ body.about {
 	  		color: #92a1a1;
 	  		ul {
 	  			list-style: none;
-	  			margin: 0;
+	  			margin: 0 0 emCalc(30px) 0;
 	  			padding: 0;
 	  			li {
-	  				margin: 0;
+	  				margin: 0 0 emCalc(10px) 0;
 	  				padding: 0;
 	  				list-style: none;
 	  				text-align: center;
-	  				text-transform: uppercase;
-	  				@include gibson-light-bold;
+	  				.skill {
+	  					text-transform: uppercase;
+	  					@include gibson-light-bold;	  					
+	  				}
 	  				font-size: emCalc(18px);
-	  				.skill-desc {
+	  				span.skill-desc {
 	  					display: block;
 	  					@include droid-serif-italic;
 	  					font-size: emCalc(11px);
 	  					color: #a1adad;
+	  					text-transform: normal;
 	  				}
 	  			}
 	  		}
 				.need-somethin {
 					padding-top: emCalc(20px);
-					padding-bottom: emCalc(20px);
+					padding-bottom: emCalc(9px);
 					margin-left: emCalc(25px);
 					margin-right: emCalc(25px);
-					margin-top: emCalc(20px);
+					margin-top: emCalc(22px);
+					margin-bottom: 0;
 					font-size: emCalc(14px);
 					text-align: center;
 					@include droid-serif-italic;
@@ -422,7 +428,7 @@ body.about {
 	  	padding-top: emCalc(20px);
 	  	padding-bottom: emCalc(20px);
 	  	background-color: #648c8b;
-	  	min-height: 585px;
+	  	min-height: 601px;
 	  	position: relative;
 	  	p.first {
 	  		@include droid-serif-italic;
@@ -461,7 +467,17 @@ body.about {
 	  }
   }
   .about-studio {
+  	@include droid-serif-italic;
+  	color: #92a1a1;
   	.columns {
+  		ul {
+  			list-style: none;
+  			margin-left: 0;
+  			font-size: emCalc(14px);
+  			li {
+  				list-style: none;
+  			}
+  		}
   		h4 {
   			border-top: 5px solid #eaf4ec;
   			padding-top: emCalc(10px);
@@ -470,8 +486,46 @@ body.about {
   			color: #4e4b50;
   			text-transform: uppercase;
   		}
+  		p { font-size: emCalc(14px); }
   	}
   }
+  #personal-project-wrap,
+  #personal-proj-desc-wrap {
+  	background-color: $light-green-bg;
+  	@include droid-serif-italic;
+  	color: #8ea29a;
+  }
+  .personal-projects {
+  	text-align: center;
+  	padding: emCalc(40px) 0;
+  	h4 {
+  		color: #a7b4af;
+  	}
+  }
+  .personal-proj-desc {
+  	.large-4.columns {
+  		border-top: 5px solid #fff;
+  		h4 {
+  			margin-top: emCalc(30px);
+  		}
+  	}
+  	.col-first {
+  		margin-left: 0;
+  	}
+  }
+  #inner-wrapper {
+	  #talk-wrapper {
+	  	background: #648c8b;
+	  	.row#lets-talk {
+	  		color: #fff;
+		  	.talk-btn {
+		  		color: #fb6c40;
+		  		background-color: #fff;
+		  		border-bottom: none;
+		  	}
+	  	}
+	  }
+	}
 }
 
 /* We use this media query to add styles to any device that supports media queries */
