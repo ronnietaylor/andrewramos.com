@@ -18,6 +18,7 @@
             li.divider
             li
               a href="#"  Resources
-          ul.right.mobile-tagline
-            li.mobile-name Andrew Ramos
-            li.mobile-tag Beautiful brands, websites and mobile apps
+          - unless @bodyclass == "home"
+            ul.right.mobile-tagline
+              li.mobile-name Andrew Ramos
+              li.mobile-tag Beautiful brands, websites and mobile apps
