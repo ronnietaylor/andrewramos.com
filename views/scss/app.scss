@@ -423,12 +423,12 @@ body.about {
 	  	}
 	  }
 	  .about-details {
-	  	padding-left: emCalc(20px);
-	  	padding-right: emCalc(50px);
-	  	padding-top: emCalc(20px);
-	  	padding-bottom: emCalc(20px);
+	  	padding-left: emCalc(30px);
+	  	padding-right: emCalc(120px);
+	  	padding-top: emCalc(80px);
+	  	padding-bottom: emCalc(30px);
 	  	background-color: #648c8b;
-	  	min-height: 601px;
+	  	min-height: 707px;
 	  	position: relative;
 	  	p.first {
 	  		@include droid-serif-italic;
