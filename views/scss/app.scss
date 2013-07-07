@@ -359,6 +359,9 @@ body.about {
   .about-row{
   	margin-bottom: emCalc(66px);
 	  .about-summary {
+	  	.head-shot {
+	  		text-align: center;
+	  	}
 	  	.question {
 	  		text-align: center;
 	  		margin-top: emCalc(18px);
@@ -482,7 +485,7 @@ body.about {
   			border-top: 5px solid #eaf4ec;
   			padding-top: emCalc(10px);
   			@include gibson-light-bold;
-  			font-size: emCalc(16px);
+  			font-size: emCalc(18px);
   			color: #4e4b50;
   			text-transform: uppercase;
   		}
@@ -507,6 +510,9 @@ body.about {
   		border-top: 5px solid #fff;
   		h4 {
   			margin-top: emCalc(30px);
+  		}
+  		p {
+  			font-size: emCalc(14px);
   		}
   	}
   	.col-first {
@@ -618,7 +624,9 @@ body.about {
 }
 
 /* Apply styles to screens in portrait orientation */
-@media #{$portrait} { }
+@media #{$portrait} {
+	.mobile-tag { display: none; }
+}
 
 /* We also use Modernizr to add a .touch class to the body when applicable */
 /* You can prepend this class to anything and it will style only for touch devices */
