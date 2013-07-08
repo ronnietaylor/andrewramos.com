@@ -87,6 +87,10 @@ $footer-green: #a0b6b6;
 	top: 500px;
 }
 
+.orange-divider {
+	border-top: solid #fb6c40 5px;
+}
+
 body{
 	h1, h2, h3, h4, h5, h6 {
 		font-weight: normal;
@@ -307,6 +311,11 @@ body{
 					}
 				}
 			}
+		}
+	}
+	.other-projects {
+		h3 {
+			text-align: center;
 		}
 	}
 }
@@ -538,7 +547,15 @@ body.about {
 @media #{$screen} { }
 
 /* Used to alter styles for screens at least 768px wide. This is where the grid changes. */
-@media #{$small} { }
+@media #{$small} {
+	.top-bar {
+		.top-bar-section {
+			.left {
+				margin-left: emCalc(-22px);
+			}
+		}
+	}
+}
 
 /* Used to alter styles for screens at least 1280px wide. */
 @media #{$medium} { }
@@ -580,11 +597,14 @@ body.about {
 							top: -41px;
 							right: 0;
 							z-index: 5;
-							width: 360px;
 							color: #6f8c8c;
+							width: 116px;
 							li {
 								display: inline;
 								text-align: right;
+								span {
+									display: inline-block;
+								}
 							}
 							.mobile-name {
 								@include gibson-light-bold;
@@ -618,9 +638,7 @@ body.about {
 
 /* Apply styles to screens in landscape orientation */
 @media #{$landscape} { 
-	body {
-
-	}
+	.mobile-tag { display: none; }
 }
 
 /* Apply styles to screens in portrait orientation */
