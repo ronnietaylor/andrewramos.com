@@ -74,6 +74,11 @@ class Ramos < Sinatra::Base
     slim :client1
   end
 
+  get '/work/quench' do
+    @bodyclass = "work-details"
+    slim :quench
+  end
+
   get '/css/:name.css' do
     content_type 'text/css', :charset => 'utf-8'
     scss(:"scss/#{params[:name]}", Compass.sass_engine_options)
