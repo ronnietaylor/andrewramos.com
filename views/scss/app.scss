@@ -78,13 +78,14 @@ $footer-green: #a0b6b6;
 
 
 #top-arrw {
-	width: 50px;
-	height: 50px;
-	background-color: #fe6860;
+	background-color: #fb6c40;
 	@include radius(3px);
+  padding: emCalc(10px);
 	position: fixed;
 	right: 20px;
-	top: 500px;
+	bottom: 50%;
+  display: none;
+  z-index: 5;
 }
 
 .orange-divider {
@@ -92,6 +93,7 @@ $footer-green: #a0b6b6;
 }
 
 body{
+  position: inherit;
 	h1, h2, h3, h4, h5, h6 {
 		font-weight: normal;
 	}
@@ -118,15 +120,18 @@ body{
 							text-align: center;
 							a {
 								color: $light-green;
+								transition: color 400ms ease-out;
 							}
 							a:hover {
 								background: url('/images/nav-arrow.png') top center no-repeat;
+								color: #6f9184;
 							}
 						}
 						.divider {
 							border-right: 3px solid #e4f0e6;
 							border-left: 3px solid #e4f0e6;
-
+              height: 30px;
+              margin-top: 14px;
 						}
 					}
 					.mobile-tagline {
@@ -479,6 +484,7 @@ body.about {
 	  }
   }
   .about-studio {
+    margin-bottom: emCalc(40px);
   	@include droid-serif-italic;
   	color: #92a1a1;
   	.columns {
@@ -514,19 +520,22 @@ body.about {
   		color: #a7b4af;
   	}
   }
-  .personal-proj-desc {
-  	.large-4.columns {
-  		border-top: 5px solid #fff;
-  		h4 {
-  			margin-top: emCalc(30px);
-  		}
-  		p {
-  			font-size: emCalc(14px);
-  		}
-  	}
-  	.col-first {
-  		margin-left: 0;
-  	}
+  #personal-proj-desc-wrap {
+    padding-bottom: emCalc(40px);
+    .personal-proj-desc {
+    	.large-4.columns {
+    		border-top: 5px solid #fff;
+    		h4 {
+    			margin-top: emCalc(30px);
+    		}
+    		p {
+    			font-size: emCalc(14px);
+    		}
+    	}
+    	.col-first {
+    		margin-left: 0;
+    	}
+    }
   }
   #inner-wrapper {
 	  #talk-wrapper {
@@ -565,6 +574,11 @@ body.about {
 
 /* Apply styles to screens smaller than 768 wide. This is where the grid changes. */
 @media #{$small-max} { 
+
+  #top-arrw {
+    display: none;
+  }
+
 	body {
 		#inner-wrapper {
 			#logo {
@@ -589,6 +603,8 @@ body.about {
 								border-left: none;
 								border-top: 1px solid #e4f0e6;
 								border-bottom: none;
+                height: 1px;
+                margin-top: 0;
 							}
 						}
 						.mobile-tagline {
@@ -634,6 +650,21 @@ body.about {
 			}
 		}
 	}
+
+  body.about {
+    .about-row {
+      .about-details {
+        min-height: 0;
+        .follow-me {
+          position: relative;
+          left: inherit;
+          i {
+            font-size: 1.7em;
+          }
+        }
+      }
+    }
+  }
 }
 
 /* Apply styles to screens in landscape orientation */

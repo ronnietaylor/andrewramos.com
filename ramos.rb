@@ -35,6 +35,7 @@ class Ramos < Sinatra::Base
     js :app, '/js/app.js', [
       '/js/jquery-1.7.2.min.js',
       '/js/jquery.fittext.js',
+      '/js/jquery.sticky.js',
       '/js/underscore.js',
       '/js/backbone.js',
       '/js/custom.modernizr.js',
@@ -65,15 +66,39 @@ class Ramos < Sinatra::Base
     slim :about
   end
 
+  # Just stubbing in the resources path for later.
+  get '/resources' do
+    @bodyclass = "resources"
+    slim :index
+  end
+
+  # The main work page. Technically we don't have one right now.
   get '/work' do
     slim :index
   end
 
-  get '/work/client1' do
-    @bodyclass = "work-details"
-    slim :client1
+  # All work detail pages below here.
+  get '/work/quench' do
+    @bodyclass = "quench"
+    slim :quench
   end
 
+  get '/work/line-and-lot' do
+    @bodyclass = "line-and-lot"
+    slim :'line-and-lot'
+  end
+
+  get '/work/wren' do
+    @bodyclass = "wren"
+    slim :wren
+  end
+
+  get '/work/somewhat-organic' do
+    @bodyclass = "somewhat-organic"
+    slim :'somewhat-organic'
+  end
+
+  # This is just a wildcard route for css when referenced in templates.
   get '/css/:name.css' do
     content_type 'text/css', :charset => 'utf-8'
     scss(:"scss/#{params[:name]}", Compass.sass_engine_options)
