@@ -336,14 +336,42 @@ body{
 			}
 		}
 	}
+  #work-details-bg {
+    background-color: #f1f6f6;
+    padding-top: 1px;
+  }
 	.other-projects {
 		h3 {
 			text-align: center;
+      color: #2c5a5c;
+      font-size: emCalc(20px);
+      margin-bottom: emCalc(26px);
 		}
 	}
 }
 
 body.work-details {
+  #inner-wrapper {
+    #nav-wrapper {
+      background-color: #fff;
+      nav.top-bar {
+        background-color: #fff;
+        .top-bar-section{
+          ul {
+            background-color: #fff;
+            li {
+              a:not(.button) {
+                background-color: #fff;
+              }
+            }
+          }
+          .mobile-tagline {
+            background-color: #fff;
+          }
+        }
+      }
+    }
+  }
 	.row.crumbs {
 		margin-top: emCalc(30px);
 		margin-bottom: emCalc(50px);
