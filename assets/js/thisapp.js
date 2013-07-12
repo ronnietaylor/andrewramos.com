@@ -9,6 +9,7 @@ var aRamos = {};
 // Enable Zurb Foundation JS
 $(document).foundation();
 
+// Prepare to display random client quotes on home page.
 this.randomtip = function(){
   var length = $("#tips li").length;
   var ran = Math.floor(Math.random()*length) + 1;
