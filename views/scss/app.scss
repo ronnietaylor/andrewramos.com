@@ -68,14 +68,21 @@ $footer-green: #a0b6b6;
 	font-weight: normal;
 }
 @mixin droid-serif {
-	font-family: 'DroidSerif',serif;
+	font-family: 'Droid Serif',serif;
 	font-weight: 400;
 }
 @mixin droid-serif-italic {
-	font-family: 'DroidSerif-Italic',serif;
+	font-family: 'Droid Serif',serif;
 	font-weight: 400;
+	font-style: italic;
 }
 
+#logo-svg {
+	display: block;
+	width: 300px;
+	height: 100px;
+	margin: 0 auto;
+}
 
 #top-arrw {
 	background-color: #fb6c40;
@@ -571,15 +578,22 @@ body.about {
   	padding: emCalc(40px) 0;
   	h4 {
   		color: #a7b4af;
+  		text-transform: uppercase;
   	}
   }
   #personal-proj-desc-wrap {
     padding-bottom: emCalc(40px);
     .personal-proj-desc {
+    	.white-line {
+    		border-top: 5px solid white;
+    		height: 5px;
+    	}
     	.large-4.columns {
-    		border-top: 5px solid #fff;
     		h4 {
     			margin-top: emCalc(30px);
+    			text-transform: uppercase;
+    			color: #4d7170;
+    			font-size: emCalc(18px);
     		}
     		p {
     			font-size: emCalc(14px);

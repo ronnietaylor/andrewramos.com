@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet href="sp-styles.css" type="text/css"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="95 40 550 180" preserveAspectRatio="xMidYMid meet">
+	<title>Andrew Ramos</title>
+	<desc>The Andrew RamosLogo</desc>
+	<g id="main">
+		<polyline points="100,100 150,100 170,150 120,150" />
+		<polyline points="170,100 220,100 240,150 190,150" />
+
+		<polyline class="orange" points="120,45 170,45 150,95 100,95" />
+		<polyline class="orange" points="190,155 240,155 220,205 170,205" />
+
+		<text id="sp" x="240" y="150">sitepoint</text>
+	</g>
+</svg>
