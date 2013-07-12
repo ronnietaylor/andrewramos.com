@@ -35,7 +35,6 @@ class Ramos < Sinatra::Base
     js :app, '/js/app.js', [
       '/js/jquery-1.7.2.min.js',
       '/js/jquery.fittext.js',
-      '/js/jquery.sticky.js',
       '/js/underscore.js',
       '/js/backbone.js',
       '/js/custom.modernizr.js',
@@ -79,22 +78,22 @@ class Ramos < Sinatra::Base
 
   # All work detail pages below here.
   get '/work/quench' do
-    @bodyclass = "quench"
+    @bodyclass = "work-details"
     slim :quench
   end
 
   get '/work/line-and-lot' do
-    @bodyclass = "line-and-lot"
+    @bodyclass = "work-details"
     slim :'line-and-lot'
   end
 
   get '/work/wren' do
-    @bodyclass = "wren"
+    @bodyclass = "work-details"
     slim :wren
   end
 
   get '/work/somewhat-organic' do
-    @bodyclass = "somewhat-organic"
+    @bodyclass = "work-details"
     slim :'somewhat-organic'
   end
 
